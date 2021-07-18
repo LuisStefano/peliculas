@@ -104,7 +104,7 @@ class PeliculasProvider {
   }
 
   Future<List<TrailerPeli>> getTrailer( String peiId) async{
-    print('Dentro del metodo buscar trailer');
+    
     final url = Uri.https( _url, '3/movie/$peiId/videos', {
       'api_key'  : _apiKey,
       //'language' : 'en-EN'
